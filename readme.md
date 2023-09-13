@@ -30,7 +30,7 @@ const cm = new ChaoticMap(key);
 const encryptValue = cm.encrypt(key);
 console.log('Texto criptografado:', encryptValue);
 
-const textoDescriptografado = cm.decrypt(encryptValue);
-console.log('Texto descriptografado:', textoDescriptografado);
+const valueEncrypt = cm.decrypt(encryptValue);
+console.log('Texto descriptografado:', valueEncrypt);
 
 ```
