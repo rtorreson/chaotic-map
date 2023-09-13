@@ -1,0 +1,19 @@
+{
+  "name": "chaotic-map",
+  "version": "0.0.5",
+  "main": "index.js",
+  "license": "MIT",
+  "type": "module",
+  "author": "Rafael Torreson <rafael.torreson@hotmail.com>",
+  "repository": { "url": "https://github.com/rtorreson/chaotic-map.git" },
+  "keywords": [
+    "criptografia",
+    "mapa caótico",
+    "AES",
+    "segurança",
+    "chave",
+    "descriptografia",
+    "encrypt",
+    "decrypt"
+  ]
+}
