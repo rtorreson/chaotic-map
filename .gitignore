@@ -1,0 +1,4 @@
+node_modules
+.vscode
+generate.js
+yarn.lock
