@@ -20,17 +20,19 @@ Para utilizar a classe `ChaoticMap`, siga estas etapas:
 4. Importe a classe em seu código conforme necessário:
 
 ```javascript
-import { ChaoticMap, KeyGeneratorChaoticMap } from 'chaotic-map'; 
+import { ChaoticMap, KeyGenerator } from 'chaotic-map';
 
-const keyGenerator = new KeyGeneratorChaoticMap();
+const keyGenerator = new KeyGenerator();
 const key = keyGenerator.generateKey();
 
-const cm = new ChaoticMap(key); 
+const chaoticMap = new ChaoticMap(key);
 
-const encryptValue = cm.encrypt(key);
-console.log('Texto criptografado:', encryptValue);
+const encryptedValue = chaoticMap.encrypt(key);
+const decryptedValue = chaoticMap.decrypt(encryptedValue);
 
-const valueEncrypt = cm.decrypt(encryptValue);
-console.log('Texto descriptografado:', valueEncrypt);
+console.log(encryptedValue); // b9d7a6521f6436971723364265a6bed12db5444814450aca70ecfdc1bca2d2de0867caa3412e7293d99720d60432e202019b230b193b8032dd88d372ebdd2f6d1dcb2538e953e7d5aeea6b3488c52246
+
+console.log(decryptedValue); // d790b173a6cff9125b5ec6e2558a51a49d8d27d231de7c841baf9a134b01062c
+
 
 ```
