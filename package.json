@@ -1,7 +1,7 @@
 {
   "name": "chaotic-map",
-  "version": "0.0.7",
-  "main": "index.js",
+  "version": "0.0.8",
+  "main": "src/index.js",
   "license": "MIT",
   "type": "module",
   "author": "Rafael Torreson <rafael.torreson@hotmail.com>",
