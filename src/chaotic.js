@@ -114,14 +114,14 @@ export class ChaoticMap {
 
     /**
    * Returns the singleton instance of ChaoticMap.
-   * @returns {ChaoticMap} The ChaoticMap instance.
+   * @returns {ChaoticMap} @static The ChaoticMap instance.
    */
-    instance() {
+    static instance() {
       if (!ChaoticMap.instance) {
         ChaoticMap.instance = new ChaoticMap();
       }
   
-      return KeyGenerator.instance;
+      return ChaoticMap.instance; 
     }
 
   /**
@@ -132,8 +132,7 @@ export class ChaoticMap {
   encrypt(value) {
     const cipher = crypto.createCipheriv('aes-256-cbc', this.key, this.iv);
     let encrypted = cipher.update(value, 'utf-8', 'hex');
-    encrypted += cipher.final('hex');
-    return encrypted;
+    return encrypted += cipher.final('hex');
   }
 
   /**
